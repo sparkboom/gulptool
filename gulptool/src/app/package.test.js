@@ -13,7 +13,7 @@ test( 'identify a package by it\'s default command', t => {
       fqn: 'gulptool.core.clean',
       defaultCommand: 'clean',
       description: '',
-      run: () => {}
+      create: () => {}
     };
 
     // Act
@@ -32,7 +32,7 @@ test( 'does not identify a package by the default command', t => {
     pkg.loadCorePackages([{
       name: 'clean',
       fqn: 'gulptool.core.clean',
-      run: () => {}
+      create: () => {}
     }])
 
     // Assert
@@ -49,7 +49,7 @@ test( 'identify a package by registering a command', t => {
       name: 'clean',
       fqn: 'gulptool.core.clean',
       description: '',
-      run: () => {}
+      create: () => {}
     };
 
     // Act
