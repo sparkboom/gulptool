@@ -8,7 +8,7 @@ export default {
 
     defineTask(gulp, pkg, taskName, pkgConf) {
 
+        log.debug(`creating task '${taskName}', with '${pkg.fqn}'`);
         gulp.task( taskName,  pkg.create(pkgConf) );
-        log.debug(`created task '${taskName}', with '${pkg.fqn}'`);
     }
 };

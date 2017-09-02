@@ -22,13 +22,14 @@ class TaskConfigMap{
 */
 const taskConfigs = {};
 
+
 /*
   Task Config manages the task configurations
 
 */
 export default class TaskConfig {
 
-    constructor({glob, loader}){
+    constructor({glob = null, loader = null}){
 
         this.glob = glob || _glob;
         this.loader = loader || (p => require(p).default);

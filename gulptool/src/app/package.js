@@ -7,13 +7,13 @@ import _log from './log';
 
 class PackageItem{
 
-  constructor({name, defaultCommand, fqn, description, run}){
+  constructor({name, defaultCommand, fqn, description, create}){
 
       this.name = name;
       this.fqn = fqn;
       this.defaultCommand = defaultCommand;
       this.description = description;
-      this.run = run;
+      this.create = create;
   }
 }
 
