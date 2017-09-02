@@ -1,0 +1,45 @@
+{
+  "name": "gulptool",
+  "version": "1.0.0",
+  "description": "GulpTool - A Gulp Task Suite Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "author": "Matthew McLeod matt@appboutiq.com",
+  "license": "MIT",
+  "dependencies": {
+    "glob": "^7.1.2",
+    "lodash": "^4.17.4",
+    "loglevel": "^1.4.1",
+    "loglevel-colored-level-prefix": "^1.0.0",
+    "yargs": "^8.0.2"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "tap-nyan": "^1.1.0",
+    "sinon": "^3.2.1",
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.5.2",
+    "gulp": "github:gulpjs/gulp#4.0"
+  },
+  "ava": {
+    "files": [
+      "src/**/*.test.js"
+    ],
+    "source": [
+      "src/**/*!(.test).js"
+    ],
+    "concurrency": 5,
+    "failFast": false,
+    "failWithoutAssertions": false,
+    "tap": true,
+    "powerAssert": false,
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  }
+}
