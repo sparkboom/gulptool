@@ -15,7 +15,7 @@ export function create(userConf = {}, args){
 
   return () => {
 
-      console.log( `clean: ${taskConf.dist}`);
-      return del(dist, {force:taskConf.force});
+      console.log( `clean: ${taskConf.path}`);
+      return del(taskConf.path, {force:taskConf.force});
   };
 };

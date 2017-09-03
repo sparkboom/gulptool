@@ -9,21 +9,24 @@
   "author": "Matthew McLeod matt@appboutiq.com",
   "license": "MIT",
   "dependencies": {
+    "del": "^3.0.0",
     "glob": "^7.1.2",
+    "gulp-util": "^3.0.8",
     "lodash": "^4.17.4",
     "loglevel": "^1.4.1",
     "loglevel-colored-level-prefix": "^1.0.0",
+    "webpack": "^3.5.5",
     "yargs": "^8.0.2"
   },
   "devDependencies": {
     "ava": "^0.19.1",
-    "tap-nyan": "^1.1.0",
-    "sinon": "^3.2.1",
     "babel-cli": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-polyfill": "^6.23.0",
     "babel-preset-env": "^1.5.2",
-    "gulp": "github:gulpjs/gulp#4.0"
+    "gulp": "github:gulpjs/gulp#4.0",
+    "sinon": "^3.2.1",
+    "tap-nyan": "^1.1.0"
   },
   "ava": {
     "files": [

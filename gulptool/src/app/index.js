@@ -9,8 +9,8 @@ export default {
 
   command,
   config,
-  packages: new Package(),
+  packages: new Package({}),
   task,
-  taskConfig: new TaskConfig(),
+  taskConfig: new TaskConfig({}),
   log
 };

@@ -45,7 +45,7 @@ export default new class GulpTool {
         let pkgConf = app.taskConfig.getTaskConfig(app.command.taskParts);
 
         log.debug('pkgConf', pkgConf);
-        app.task.defineTask(gulp, pkg, app.command.fullCommand, pkgConf);
+        app.task.defineTask(gulp, pkg, app.command.fullTaskName, pkgConf);
 
     }
 
